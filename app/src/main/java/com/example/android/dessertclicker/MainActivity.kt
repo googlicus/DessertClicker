@@ -90,13 +90,22 @@ class MainActivity : AppCompatActivity() {
 
     override fun onPause() {
         super.onPause()
-        Timber.i("onPause")
+        Timber.i("onPause()")
     }
 
+    override fun onStop() {
+        super.onStop()
+        Timber.i("onStop()")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Timber.i("onDestroy()")
+    }
 
     override fun onResume() {
         super.onResume()
-        Timber.i("onResume")
+        Timber.i("onResume()")
     }
 
     /**
